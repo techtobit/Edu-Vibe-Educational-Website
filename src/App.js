@@ -10,7 +10,6 @@ import About from './Components/Home/Page/About/About'
 import Contact from './Components/Home/Page/Contact/Contact'
 import Footer from './Components/Shared/Footer/Footer';
 import Navigation from './Components/Shared/Header/Navigation';
-// import Footer from './Components/Shared/Footer/Footer'
 
 const App = () => {
   return (
@@ -18,8 +17,8 @@ const App = () => {
       <Navigation></Navigation>
       <Routes>
         <Route path='/' element={<HomeBanner></HomeBanner>}></Route>
-        <Route path='/home' element={<HomeBanner></HomeBanner>}>
-          <Route path='/services' element={<CourseServices></CourseServices>}></Route>
+        <Route path='/home' element={<HomeBanner></HomeBanner>}></Route>
+        <Route path='/services' element={<CourseServices></CourseServices>}>
         </Route>
         <Route path='/services/:aboutCourse' element={<SingleCourse></SingleCourse>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
@@ -28,7 +27,6 @@ const App = () => {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<SingUp></SingUp>}></Route>
       </Routes>
-      <CourseServices></CourseServices>
       <Footer></Footer>
     </div>
   );

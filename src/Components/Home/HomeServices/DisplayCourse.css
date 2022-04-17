@@ -8,3 +8,11 @@
  height: 180px;
 
 }
+
+.course-cart-btn {
+ background-color: #525fe1;
+}
+
+.course-cart-btn:hover {
+ background-color: #231f40;
+}

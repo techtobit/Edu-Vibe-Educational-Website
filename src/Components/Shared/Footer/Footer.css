@@ -1,6 +1,7 @@
 .footer-container {
  width: 100%;
  height: auto;
+
  background: hsla(180, 100%, 94%, 1);
 
  background: linear-gradient(360deg, hsla(180, 100%, 94%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);

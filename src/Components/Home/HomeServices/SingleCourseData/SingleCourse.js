@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
+import { CourseContext } from '../DisplayCourse';
 
 const SingleCourse = () => {
- const { aboutCourse } = useParams()
-
- // console.log(aboutCourse);
-
+ const contexCourse = useContext(CourseContext)
+ const { aboutCourse } = useParams(CourseContext)
  return (
-  <div>
-   <h1>all About {aboutCourse}</h1>
-   {/* {
-    getCourse.map(course => console.log(course))
-   } */}
+  <div className='text-5xl'>
+   <h1>Data From Use Params  : {aboutCourse}</h1>
+   <br />
+   <h1>Data From useContext  : {contexCourse}</h1>
+
   </div>
  );
 };
