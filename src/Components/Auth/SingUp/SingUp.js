@@ -64,7 +64,7 @@ const Login = () => {
       <div className="input-div pb-3">
        <label className='text-lg pb-4' htmlFor="Email"> Email </label>
        <br />
-       <input onBlur={handelEmail} className=' w-full border-solid border-blue-400 border py-2 px-4 rounded text-gray-700' type='email' placeholder="xyz@exple.com" required />
+       <input onBlur={handelEmail} className='w-full border-solid border-blue-400 border py-2 px-4 rounded text-gray-700' type='email' placeholder="xyz@exple.com" required />
       </div>
       <div className="input-div pb-3">
        <label className='text-lg pb-4' htmlFor="password"> Password </label>
@@ -83,7 +83,7 @@ const Login = () => {
       }
       <button className='w-full bg-blue-400 hover:bg-blue-600 border-blue-400 text-center border-solid rounded border  text-xl font-medium p-2  text-white '>Registrar</button>
      </form>
-     <p className="pt-2">Already Have Account? <Link to='/login' className='text-blue-400 hover:text-blue-600'>LogIn</Link> </p>
+     <p className="pt-2">Dont't Have Account? <Link to='/login' className='text-blue-400 hover:text-blue-600'>LogIn</Link> </p>
      <div className="grid grid-cols-3 items-center pb-2 pt-2">
       <div className=" w-auto h-px bg-slate-400"></div>
       <div className="text-center">or</div>
