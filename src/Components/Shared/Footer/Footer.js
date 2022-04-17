@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
  return (
-  <div className='footer-container'>
-   <div className="footer-one">
+  <div className='footer-container pt-5 pb-2'>
+   <div className="footer-one pb-2">
     <div className="footer-logo">
      <img className='main-logo' src={logo} alt="" />
      <img src={palyStore} alt="" />
