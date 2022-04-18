@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import homeBanner from '../../Assets/banner-04.png'
 import CourseServices from '../HomeServices/CourseServices';
@@ -21,10 +23,14 @@ const HomeBanner = () => {
      <div className="main-btns flex pl-0 p-10 justify-spacebetwn">
       <button className="explore text-white font-bold w-40 h-14 ">
        Get Start
+       <FontAwesomeIcon icon={faArrowRight} className='pl-2'></FontAwesomeIcon>
       </button>
-      <div className="watch-btn pl-10">
-       <button className="watch-video font-bold w-40 h-14">
-        Watch Video
+      <div className="watch-btn pl-10 flex items-center justify-items-center ">
+       <button className="watch-video flex items-center  justify-items-center  ">
+        <div className='play-btn '>
+         <FontAwesomeIcon icon={faCirclePlay} className='play-icon'></FontAwesomeIcon>
+        </div>
+        <p className='font-bold pl-3'>Watch Video</p>
        </button>
       </div>
      </div>

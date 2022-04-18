@@ -1,31 +1,56 @@
 [{
-  "courseName": "Web Development",
-  "img": "https://i.ibb.co/7K6gqjB/pythone.jpg",
-  "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
-  "price": 53
- },
- {
-  "courseName": "Web Development",
-  "img": "https://i.ibb.co/7K6gqjB/pythone.jpg",
-  "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
-  "price": 53
- },
- {
-  "courseName": "Web Development",
-  "img": "https://i.ibb.co/7K6gqjB/pythone.jpg",
-  "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
-  "price": 53
- },
- {
-  "courseName": "Web Development",
-  "img": "https://i.ibb.co/7K6gqjB/pythone.jpg",
-  "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
-  "price": 53
- },
- {
-  "courseName": "Web Development",
-  "img": "https://i.ibb.co/7K6gqjB/pythone.jpg",
-  "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
-  "price": 53
- }
+    "courseName": "Web Development",
+    "author": "Rifat",
+    "authorImg": "https://i.ibb.co/SRPsvDd/instructor-1.jpg",
+    "img": "https://i.ibb.co/0FYkHfb/course-01.jpg",
+    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
+    "price": 53,
+    "students": "763",
+    "lesson": "40",
+    "rateing": "4.9"
+  },
+  {
+    "courseName": "Web Development",
+    "author": "jhone",
+    "authorImg": "https://i.ibb.co/SRPsvDd/instructor-1.jpg",
+    "img": "https://i.ibb.co/0FYkHfb/course-01.jpg",
+    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
+    "price": 120,
+    "students": "203",
+    "lesson": "80",
+    "rateing": "4.5"
+  },
+  {
+    "courseName": "Web Development",
+    "author": "jhone",
+    "authorImg": "https://i.ibb.co/SRPsvDd/instructor-1.jpg",
+    "img": "https://i.ibb.co/0FYkHfb/course-01.jpg",
+    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
+    "price": 150,
+    "students": "250",
+    "lesson": "90",
+    "rateing": "4.7"
+  },
+  {
+    "courseName": "Web Development",
+    "author": "jhone",
+    "authorImg": "https://i.ibb.co/SRPsvDd/instructor-1.jpg",
+    "img": "https://i.ibb.co/0FYkHfb/course-01.jpg",
+    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
+    "price": 200,
+    "students": "350",
+    "lesson": "100",
+    "rateing": "5.0"
+  },
+  {
+    "courseName": "Web Development",
+    "author": "jhone",
+    "authorImg": "https://i.ibb.co/SRPsvDd/instructor-1.jpg",
+    "img": "https://i.ibb.co/0FYkHfb/course-01.jpg",
+    "discription": "Lorem ipsum dolor sit amet consectetur adipisicing",
+    "price": 500,
+    "students": "50",
+    "lesson": "160",
+    "rateing": "5.9"
+  }
 ]

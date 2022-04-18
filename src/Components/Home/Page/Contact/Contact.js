@@ -69,7 +69,7 @@ const Contact = () => {
      <h2 className='text-black text-4xl font-bold'>My Offices Locations</h2>
     </div>
     <div className="contact-location grid grid-cols-3 justify-items-center gap-5">
-     <div className="phone grid justify-center justify-items-center bg-white shadow-slate-100 rounded-lg w-80">
+     <div className="phone grid justify-center justify-items-center bg-white shadow-slate-100 rounded-lg w-80 hover:scale-105 delay-50 duration-100">
       <div className='pt-3'>
        <img className='' src={WhatsApp} alt="" />
       </div>
@@ -82,7 +82,7 @@ const Contact = () => {
       </div>
 
      </div>
-     <div className="phone grid justify-center justify-items-center bg-white shadow-slate-100 rounded-lg w-80">
+     <div className="phone grid justify-center justify-items-center bg-white shadow-slate-100 rounded-lg w-80 hover:scale-105 delay-50 duration-100">
       <div className='pt-3'>
        <img className='' src={House} alt="" />
       </div>
@@ -95,7 +95,7 @@ const Contact = () => {
       </div>
      </div>
 
-     <div className="phone grid justify-center justify-items-center bg-white shadow-slate-100 rounded-lg w-80">
+     <div className="phone grid justify-center justify-items-center bg-white shadow-slate-100 rounded-lg w-80 hover:scale-105 delay-50 duration-100">
       <div className='pt-3'>
        <img className='' src={Linkedin} alt="" />
       </div>

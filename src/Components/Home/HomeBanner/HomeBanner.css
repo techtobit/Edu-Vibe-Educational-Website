@@ -20,4 +20,18 @@
 
 .explore:hover {
  background-color: #231f40;
+
+}
+
+.play-btn {
+ background-color: rgb(246, 223, 204);
+ border-radius: 50%;
+ /* width: 80px;
+ height: 80px; */
+}
+
+.play-icon {
+ width: 30px;
+ height: 30px;
+ color: #f86f03;
 }
