@@ -10,6 +10,7 @@ import About from './Components/Home/Page/About/About'
 import Contact from './Components/Home/Page/Contact/Contact'
 import Footer from './Components/Shared/Footer/Footer';
 import Navigation from './Components/Shared/Header/Navigation';
+import PageNotFound from './Components/Home/Page/404/PageNotFound';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<SingUp></SingUp>}></Route>
+        <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
