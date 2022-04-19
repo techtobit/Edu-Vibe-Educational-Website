@@ -10,7 +10,7 @@ const GetFeedbacks = () => {
     <p className="head-o text-blue-500 font-semibold">TESTIMONIALS</p>
     <h2 className="head-tile text-4xl font-bold">Students Feedback</h2>
    </div>
-   <div className='grid gap-10 grid-cols-2 py-1'>
+   <div className='grid gap-10 lg:grid-cols-2 md:grid-cols-2 md:gap-5  sm:grid-cols-1 py-1'>
     {
      feedbacks.map(feedback => <StudentFeedback
       key={feedback.person}

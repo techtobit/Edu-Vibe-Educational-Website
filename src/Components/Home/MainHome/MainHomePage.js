@@ -13,14 +13,14 @@ import Subscribe from '../Subscribe/Subscribe';
 const HomeBanner = () => {
   return (
     <>
-      <div className='home-section grid grid-cols-2 justify-center items-center pt-4'>
+      <div className='home-section grid lg:grid-cols-2 md:grid-cols-2 md:gap-5  sm:grid-cols-1 justify-center items-center pt-4'>
         <div className="home-title grid pl-10">
-          <h1 className="main-title text-6xl font-bold">
+          <h1 className="main-title lg:text-6xl md:text-5xl  md:text-4xl font-bold">
             Education Is A Path
             <br />
             To Success In Life
           </h1>
-          <p className="main-dis min-w-min pl-0 p-5">
+          <p className="main-dis min-w-min pl-0 p-5 sm:text-xs">
             Learning to code not only allows you to give
             machines instructions, but it also teaches you
             abstract thinking and problem-solving. In fact,
@@ -42,8 +42,8 @@ const HomeBanner = () => {
             </div>
           </div>
         </div>
-        <div className="home-banner">
-          <img className='pl-4' src={homeBanner} alt="" />
+        <div className="home-banner grid  sm:justify-items-center">
+          <img className='lg:pl-4 sm:pl-0   ' src={homeBanner} alt="" />
         </div>
 
       </div>

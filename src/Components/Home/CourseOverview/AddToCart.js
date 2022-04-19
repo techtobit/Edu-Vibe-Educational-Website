@@ -21,28 +21,28 @@ const AddToCart = () => {
     </div>
     <form onSubmit={handelMakePayment} className=''>
      <div className="input-div pb-4 flex">
-      <input className=' border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' type='text' placeholder="FirstName*" />
+      <input className=' border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' type='text' placeholder="Given Name*" required />
       <div className='pl-5'>
-       <input className=' border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' type='text' placeholder="FirstName*" />
+       <input className=' border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' type='text' placeholder="Sure Name*" required />
       </div>
      </div>
      <div className="input-div pb-3">
-      <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='email' type="email" placeholder="email" />
+      <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='email' type="email" placeholder="email" required />
      </div>
      <div className="input-div pb-3">
-      <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='phone' type="number" placeholder="(+880)1xxxxxxxxx" />
+      <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='phone' type="number" placeholder="(+880)1xxxxxxxxx" required />
      </div>
      <div className="input-div pb-3">
-      <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='address' type="address" placeholder="Address 2 (optional)" />
+      <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='address' type="address" placeholder="Address" required />
      </div>
      <div className="input-div pb-3">
       <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='address' type="address2" placeholder="Address 2 (optional)" />
      </div>
      <div className="input-div pb-3">
-      <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='city' type="city" placeholder="city" />
+      <input className='w-2/3 border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='city' type="city" placeholder="city" required />
      </div>
      <div className="input-div pb-3">
-      <input className='w-2/3 h-max border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='zipCode' type="number" placeholder="ZipCode" />
+      <input className='w-2/3 h-max border-solid bg-slate-50 hover:border-blue-400 border py-2 px-4 rounded text-gray-700' id='zipCode' type="number" placeholder="ZipCode" required />
      </div>
      <button className='w-30 bg-blue-600 hover:bg-blue-700 border-blue-400 text-center border-solid rounded border  text-xl font-medium p-2  text-white '>Make Payment
       <FontAwesomeIcon className='pl-2' icon={faArrowRight}></FontAwesomeIcon>

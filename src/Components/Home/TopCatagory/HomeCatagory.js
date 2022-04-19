@@ -13,7 +13,7 @@ const HomeCatagory = () => {
         <h2 className="head-tile text-4xl font-bold">Browse Popular Category</h2>
       </div>
       <div className='category-section text-center 
-  grid grid-cols-4 justify-center pb-5 justify-items-center '>
+  grid lg:grid-cols-4 md:grid-cols-3 md:gap-5  sm:grid-cols-1  justify-center pb-5 justify-items-center '>
 
         {/* category one  */}
         <div className="category  bg-blue-50 grid justify-center
