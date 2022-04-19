@@ -1,0 +1,78 @@
+[debug] [2022-04-19T17:58:27.033Z] ----------------------------------------------------------------------
+[debug] [2022-04-19T17:58:27.037Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rifat\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-04-19T17:58:27.038Z] CLI Version:   10.6.0
+[debug] [2022-04-19T17:58:27.038Z] Platform:      win32
+[debug] [2022-04-19T17:58:27.039Z] Node Version:  v16.13.0
+[debug] [2022-04-19T17:58:27.373Z] Time:          Tue Apr 19 2022 23:58:27 GMT+0600 (East Kazakhstan Time)
+[debug] [2022-04-19T17:58:27.373Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-19T17:58:27.778Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-19T17:58:27.779Z] > authorizing via signed-in user (nurthern2016@gmail.com)
+[debug] [2022-04-19T17:58:27.779Z] [iam] checking project edu-co-cc85b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-19T17:58:27.789Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/edu-co-cc85b:testIamPermissions [none]
+[debug] [2022-04-19T17:58:27.790Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/edu-co-cc85b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-19T17:58:30.422Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/edu-co-cc85b:testIamPermissions 200
+[debug] [2022-04-19T17:58:30.422Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/edu-co-cc85b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-19T17:58:30.425Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/edu-co-cc85b [none]
+[debug] [2022-04-19T17:58:31.459Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/edu-co-cc85b 200
+[debug] [2022-04-19T17:58:31.460Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/edu-co-cc85b {"projectId":"edu-co-cc85b","projectNumber":"1065122388352","displayName":"Edu-co","name":"projects/edu-co-cc85b","resources":{"hostingSite":"edu-co-cc85b"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'edu-co-cc85b'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-04-19T17:58:31.469Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/edu-co-cc85b [none]
+[debug] [2022-04-19T17:58:32.700Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/edu-co-cc85b 200
+[debug] [2022-04-19T17:58:32.700Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/edu-co-cc85b {"projectId":"edu-co-cc85b","projectNumber":"1065122388352","displayName":"Edu-co","name":"projects/edu-co-cc85b","resources":{"hostingSite":"edu-co-cc85b"},"state":"ACTIVE"}
+[debug] [2022-04-19T17:58:32.703Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions [none]
+[debug] [2022-04-19T17:58:32.704Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-04-19T17:58:35.845Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions 200
+[debug] [2022-04-19T17:58:35.846Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions {"name":"projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[edu-co-cc85b]: beginning deploy... 
+[info] i  hosting[edu-co-cc85b]: found 1 files in default 
+[debug] [2022-04-19T17:58:35.859Z] [hosting] uploading with 200 concurrency
+[debug] [2022-04-19T17:58:35.865Z] [hosting] hash cache [ZGVmYXVsdA] stored for 1 files
+[debug] [2022-04-19T17:58:35.866Z] [hosting][hash queue][FINAL] {"max":0,"min":0,"avg":0,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":4}
+[debug] [2022-04-19T17:58:35.867Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4:populateFiles [none]
+[debug] [2022-04-19T17:58:35.867Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4:populateFiles {"files":{"/index.html":"044f22891459027b729b3bb4cb7b9cfe582ea5fed035a1f94b174629b3b4caa5"}}
+[debug] [2022-04-19T17:58:38.019Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4:populateFiles 200
+[debug] [2022-04-19T17:58:38.020Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/edu-co-cc85b/versions/08dc0b66ddf051c4/files"}
+[debug] [2022-04-19T17:58:38.020Z] [hosting][populate queue][FINAL] {"max":2156,"min":2156,"avg":2156,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2156}
+[debug] [2022-04-19T17:58:38.021Z] [hosting] uploads queued: 0
+[debug] [2022-04-19T17:58:38.021Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1650391118021}
+[info] +  hosting[edu-co-cc85b]: file upload complete 
+[debug] [2022-04-19T17:58:38.022Z] [hosting] deploy completed after 2175ms
+[debug] [2022-04-19T17:58:38.028Z] [
+  {
+    "config": {
+      "public": "default",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "edu-co-cc85b"
+    },
+    "site": "edu-co-cc85b",
+    "version": "projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4"
+  }
+]
+[info] i  hosting[edu-co-cc85b]: finalizing version... 
+[debug] [2022-04-19T17:58:38.031Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4 updateMask=status
+[debug] [2022-04-19T17:58:38.031Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4 {"status":"FINALIZED"}
+[debug] [2022-04-19T17:58:40.126Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4 200
+[debug] [2022-04-19T17:58:40.127Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4 {"name":"projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-04-19T17:58:35.624104Z","createUser":{"email":"nurthern2016@gmail.com"},"finalizeTime":"2022-04-19T17:58:40.851317Z","finalizeUser":{"email":"nurthern2016@gmail.com"}}
+[debug] [2022-04-19T17:58:40.127Z] [hosting] finalized version for edu-co-cc85b:[object Object]
+[info] +  hosting[edu-co-cc85b]: version finalized 
+[info] i  hosting[edu-co-cc85b]: releasing new version... 
+[debug] [2022-04-19T17:58:40.130Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/releases versionName=projects%2F1065122388352%2Fsites%2Fedu-co-cc85b%2Fversions%2F08dc0b66ddf051c4
+[debug] [2022-04-19T17:58:40.130Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/releases {"message":null}
+[debug] [2022-04-19T17:58:42.234Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/releases 200
+[debug] [2022-04-19T17:58:42.234Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1065122388352/sites/edu-co-cc85b/releases {"name":"projects/1065122388352/sites/edu-co-cc85b/releases/1650391122398499","version":{"name":"projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-04-19T17:58:35.624104Z","createUser":{"email":"nurthern2016@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14GhWmUlsash15KgxTsAoJPLbBBhnvOTOh-_cGpPEwg"},"finalizeTime":"2022-04-19T17:58:40.851317Z","finalizeUser":{"email":"nurthern2016@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14GhWmUlsash15KgxTsAoJPLbBBhnvOTOh-_cGpPEwg"}},"type":"DEPLOY","releaseTime":"2022-04-19T17:58:42.398499983Z","releaseUser":{"email":"nurthern2016@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14GhWmUlsash15KgxTsAoJPLbBBhnvOTOh-_cGpPEwg"}}
+[debug] [2022-04-19T17:58:42.235Z] [hosting] release: {"name":"projects/1065122388352/sites/edu-co-cc85b/releases/1650391122398499","version":{"name":"projects/1065122388352/sites/edu-co-cc85b/versions/08dc0b66ddf051c4","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-04-19T17:58:35.624104Z","createUser":{"email":"nurthern2016@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14GhWmUlsash15KgxTsAoJPLbBBhnvOTOh-_cGpPEwg"},"finalizeTime":"2022-04-19T17:58:40.851317Z","finalizeUser":{"email":"nurthern2016@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14GhWmUlsash15KgxTsAoJPLbBBhnvOTOh-_cGpPEwg"}},"type":"DEPLOY","releaseTime":"2022-04-19T17:58:42.398499983Z","releaseUser":{"email":"nurthern2016@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14GhWmUlsash15KgxTsAoJPLbBBhnvOTOh-_cGpPEwg"}}
+[info] +  hosting[edu-co-cc85b]: release complete 
