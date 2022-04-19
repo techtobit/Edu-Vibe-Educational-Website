@@ -1,0 +1,10 @@
+.category {
+ width: 180px;
+ height: 200px;
+}
+
+.category-img {
+ width: 70px;
+ height: 70px;
+ padding: 10px;
+}

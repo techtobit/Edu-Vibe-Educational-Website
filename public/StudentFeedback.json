@@ -1,0 +1,25 @@
+[{
+    "person": " Brendon M.",
+    "avatar": "https://i.ibb.co/CzHL9HT/instructor-1.jpg",
+    "job": "JavaScript Developer",
+    "comment": "The only gripe if one could call it that even, is the initial intro portion. If the IDE installation could be introduced first.... Awesome !!! "
+  },
+  {
+    "person": " K. Virat",
+    "avatar": "https://i.ibb.co/CzHL9HT/instructor-1.jpg",
+    "job": "Cloud Developer",
+    "comment": "Amazing course. Being an automation tester, trying to learn frontend techs, this course was awesome. Good Work guys."
+  },
+  {
+    "person": " alex D..",
+    "avatar": "https://i.ibb.co/CzHL9HT/instructor-1.jpg",
+    "job": "Angular Developer",
+    "comment": "A very good start, some great subjects covered and examples provided. I felt that once we got into React, API'd and other frameworks it was rushed and more difficult for someone to follow along and listen."
+  },
+  {
+    "person": " Smit D..",
+    "avatar": "https://i.ibb.co/CzHL9HT/instructor-1.jpg",
+    "job": "Angular Developer",
+    "comment": "A very good start, some great subjects covered and examples provided. I felt that once we got into React, API'd and other frameworks it was rushed and more difficult for someone to follow along and listen."
+  }
+]

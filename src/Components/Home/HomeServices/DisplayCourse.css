@@ -1,6 +1,6 @@
 .course-section {
  width: 300px;
- height: 400px;
+ height: 450px;
 }
 
 .course-section img {
@@ -8,6 +8,7 @@
  height: 180px;
 
 }
+
 
 .course-cart-btn {
  background-color: #525fe1;

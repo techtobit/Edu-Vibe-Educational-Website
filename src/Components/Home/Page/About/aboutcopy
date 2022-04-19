@@ -1,0 +1,88 @@
+import React from 'react';
+import './About.css'
+import myAvatar from '../../../Assets/AboutMe/my-avatar.png'
+import graduate from '../../../Assets/AboutMe/education.png'
+import runIng from '../../../Assets/AboutMe/study.png'
+import html from '../../../Assets/AboutMe/html.svg'
+import css from '../../../Assets/AboutMe/css.svg'
+import javascript from '../../../Assets/AboutMe/javascript.svg'
+import react from '../../../Assets/AboutMe/react.svg'
+import firebase from '../../../Assets/AboutMe/firebase.svg'
+import tailwind from '../../../Assets/AboutMe/tailwind-css.svg'
+import bootstrap from '../../../Assets/AboutMe/bootstrap.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquare } from '@fortawesome/free-solid-svg-icons';
+
+const About = () => {
+  return (
+    <div className='grid justify-center'>
+      <div className="my-avatar grid justify-center ">
+        <img src={myAvatar} alt="" />
+      </div>
+
+      <div className="about-me grid grid-cols-2 bg-slate-100 rounded drop-shadow-xl">
+
+        <div className="academic-info">
+          <h1 className='text-2xl font-bold pt-5 text-center'>Academic Info</h1>
+
+          <div className="academi grid justify-start">
+            <div className="hsc flex p-10">
+              <div className="icon flex items-center ">
+                <div className="img-icon">
+                  <img src={graduate} alt="" />
+                </div>
+                <div className="academi-name pl-5">
+                  <h2 className='font-bold text-lg'>Sir Ashutosh Govt. College
+                    <br />
+                    <span className='font-normal'> Since 2017-2019 (Science)</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="BSc flex p-10">
+              <div className="icon flex items-center ">
+                <div className="img-icon">
+                  <img src={runIng} alt="" />
+                </div>
+                <div className="academi-name pl-5">
+                  <h2 className='font-bold text-lg'>Sir Ashutosh Govt. College
+                    <br />
+                    <span className='font-normal'>Degree on BSc || National University</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div className="connected-with">
+          <h1 className='text-2xl font-bold p-5'>Connected With</h1>
+          <div className="language-syntax">
+            <div className="icon">
+              <FontAwesomeIcon icon={html}></FontAwesomeIcon>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={css}></FontAwesomeIcon>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={bootstrap}></FontAwesomeIcon>
+            </div>
+            < className="icon">
+              <FontAwesomeIcon icon={tailwind}></FontAwesomeIcon>
+              </
+              <div className="icon">
+                <FontAwesomeIcon icon={javascript}></FontAwesomeIcon>
+                <div className="icon">
+                  <FontAwesomeIcon icon={react}></FontAwesomeIcon>
+                  <div className="icon">
+                    <FontAwesomeIcon icon={firebase}></FontAwesomeIcon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            );
+};
+
+            export default About;

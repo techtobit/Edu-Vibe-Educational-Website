@@ -7,37 +7,34 @@ import DisplayCourse from './DisplayCourse';
 
 
 const CourseServices = () => {
-  const [getCourse] = LoadCourses();
+	const [getCourse] = LoadCourses();
 
-  const navigate = useNavigate();
-  
-  const hadelCourseFutures = () => {
-    navigate(`/courses/aboutCourse`)
-  }
+	const navigate = useNavigate();
+	const hadelCourseFutures = () => {
+		// navigate(`/courses/aboutCourse`)
+	}
 
-  return (
-    <>
-      <div className='pt-5'>
-        <h1 className='text-4xl text-center font-bold '>Latest Courses</h1>
-        <div className='services-section grid grid-cols-3 justify-between justify-items-center p-5
-  gap-10'>
-          {
-            getCourse.map(course => <DisplayCourse
-              key={course.price}
-              course={course}
-              hadelCourseFutures={hadelCourseFutures}
-            ></DisplayCourse>)
-          }
-        </div>
-        <div className="see-all-course grid justify-center  ">
-          <Link to='/courses' className='bg-blue-600 text-white
-            p-3 text-bold font-xl rounded-sm'>See All Course
-            <FontAwesomeIcon icon={faArrowRight} className='pl-2'></FontAwesomeIcon>
-          </Link>
-        </div>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className='pt-5'>
+				<div className="category-head grid py-10 pl-24">
+					<p className="head-o text-blue-500 font-semibold">TRANDING</p>
+					<h2 className="head-tile text-4xl font-bold">Most Popular Courses</h2>
+				</div>
+				<div className='services-section grid grid-cols-3
+        justify-between justify-items-center p-5 gap-10'>
+					{
+						getCourse.slice(1, 7).map(course => <DisplayCourse
+							key={course.price}
+							course={course}
+							hadelCourseFutures={hadelCourseFutures}
+						></DisplayCourse>)
+					}
+				</div>
+
+			</div>
+		</>
+	);
 };
 
 export default CourseServices;

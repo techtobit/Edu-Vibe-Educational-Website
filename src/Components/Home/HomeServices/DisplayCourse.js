@@ -3,13 +3,22 @@ import { faStar, faUser, faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import React, { createContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './DisplayCourse.css'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 const DisplayCourse = ({ hadelCourseFutures, course }) => {
  const { courseName, author, authorImg, img, dis, price, students, lesson, rateing } = course;
- 
+ const [user] = useAuthState(auth)
+
  const navigate = useNavigate();
  const hadelAddToCart = () => {
-  navigate(`/logIn`)
+  if (!user) {
+   navigate(`/login`)
+  }
+  else {
+   navigate('/courses/aboutCourse')
+  }
+
  }
 
  return (
@@ -19,8 +28,8 @@ const DisplayCourse = ({ hadelCourseFutures, course }) => {
      <img className='course-img hover:scale-105 delay-100 duration-200' src={img} alt="" />
      <div className="course-info">
       <div className="author-rate flex justify-between pt-5">
-       <div className='flex items-center'>
-        <img src={img} alt="" className="author-img " />
+       <div className='flex items-center author-img'>
+        <img className="img rounded" src={authorImg} alt="" />
         <h4 className='text-md pl-2'>{author}</h4>
        </div>
        <div className='flex items-center '>
@@ -44,9 +53,11 @@ const DisplayCourse = ({ hadelCourseFutures, course }) => {
       </div>
       <h2 className="course-price"></h2>
       <div className="course-btn flex items-center justify-between">
-       <button className='course-cart-btn p-2 text-white rounded font-bold' onClick={hadelAddToCart}>${price} USD</button>
+       <button className='course-cart-btn p-2 text-white rounded 
+       font-bold' onClick={hadelAddToCart}>${price} USD</button>
        <div className="readMore">
-        <button className=' font-bold p-2 border-blue-600 border-b-4 rounded hover:text-blue-500' onClick={() => hadelCourseFutures()}>Read More</button>
+        <button className=' font-bold p-2 border-blue-600 border-b-4 rounded 
+        hover:text-blue-500' onClick={() => hadelCourseFutures()}>Read More</button>
         {/* <button onClick={() => props.hadelCourseFutures(props.course)}>Read More</button> */}
        </div>
       </div>

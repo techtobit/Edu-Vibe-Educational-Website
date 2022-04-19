@@ -22,7 +22,7 @@ const Contact = () => {
         `url(${contactPerson})`,
        backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
        backgroundSize: 'cover', width: '450px',
-       height: '480px'
+       height: '480px', borderRadius: '10px', opacity: '0.7'
       }} >
       </div>
       <div className="content-overlay absolute bottom-6">
@@ -66,7 +66,7 @@ const Contact = () => {
    <div className="all-locations pt-20">
     <div className="my-location text-center pb-10">
      <h4 className='text-blue-500 text-2xl pt-2 pb-2'>LOCATIONS</h4>
-     <h2 className='text-black text-4xl font-bold'>My Offices Locations</h2>
+     <h2 className=' text-4xl font-bold'>My Offices Locations</h2>
     </div>
     <div className="contact-location grid grid-cols-3 justify-items-center gap-5">
      <div className="phone grid justify-center justify-items-center bg-white shadow-slate-100 rounded-lg w-80 hover:scale-105 delay-50 duration-100">

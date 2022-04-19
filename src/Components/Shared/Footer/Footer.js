@@ -16,16 +16,16 @@ const Footer = () => {
      <img src={IStore} alt="" />
     </div>
     <div className="footer-links">
-     <Link className="links" to=''>About Online food</Link>
+     <Link className="links" to=''>About Online Course</Link>
      <Link className="links" to=''>Read our blog</Link>
-     <Link className="links" to=''>SingUp to deliver</Link>
-     <Link className="links" to=''>Add your restaurant</Link>
+     <Link className="links" to=''>SingUp to Free Class</Link>
+     <Link className="links" to=''>Popular Course</Link>
     </div>
     <div className="footer-links">
      <Link className="links" to=''>Get Help</Link>
      <Link className="links" to=''>Read FAQs</Link>
-     <Link className="links" to=''>View all cities</Link>
-     <Link className="links" to=''>Restaurant near me</Link>
+     <Link className="links" to=''>Purchase-guide</Link>
+     <Link className="links" to=''>Contact Me</Link>
     </div>
     <div className="payment-method">
      <img src={paymentMethod} alt="" />

@@ -1,0 +1,16 @@
+.subscribe-filed {
+ width: 450px;
+ height: 80px;
+}
+
+.subscribe-filed button {
+ background-color: #525fe1;
+}
+
+.subscribe-filed button:hover {
+ background-color: #231f40;
+}
+
+.mailIcon {
+ color: #525fe1;
+}
