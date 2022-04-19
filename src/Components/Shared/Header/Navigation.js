@@ -16,7 +16,7 @@ const Navigation = () => {
   <div className='nav-container grid grid-cols-3
   justify-between items-center pt-2 pb-2'>
    <div className="nav-logo grid pl-10 items-center">
-    <img className='w-40 sm:w-20 grid ' src={siteLog} alt="" />
+    <img className='w-40  grid ' src={siteLog} alt="" />
    </div>
    <div className="nav-links font-bold flex justify-center">
     <Link className='links p-4' to='/home'>Home</Link>

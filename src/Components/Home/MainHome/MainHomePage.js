@@ -43,7 +43,7 @@ const HomeBanner = () => {
           </div>
         </div>
         <div className="home-banner grid  sm:justify-items-center">
-          <img className='lg:pl-4 sm:pl-0   ' src={homeBanner} alt="" />
+          <img className='pl-4   ' src={homeBanner} alt="" />
         </div>
 
       </div>
