@@ -9,10 +9,10 @@ import Contact from './Components/Home/Page/Contact/Contact'
 import Footer from './Components/Shared/Footer/Footer';
 import Navigation from './Components/Shared/Header/Navigation';
 import PageNotFound from './Components/Home/Page/404/PageNotFound';
-import CourseFutures from './Components/Home/CourseOverview/CourseFutures';
+import CourseFutures from './Components/Home/CourseOverview/AddToCart';
 import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
 import Courses from './Components/CoursesCoponent/Courses';
-import DisplayCourse from './Components/Home/HomeServices/DisplayCourse';
+import AddToCart from './Components/Home/CourseOverview/AddToCart';
 
 const App = () => {
   return (
@@ -32,7 +32,7 @@ const App = () => {
 
         <Route path='/addCart' element={
           <RequireAuth>
-            <CourseFutures></CourseFutures>
+            <AddToCart></AddToCart>
           </RequireAuth>
         }>
         </Route>
