@@ -5,6 +5,7 @@ import auth from '../../../firebase.init';
 import ReloadAnimation from '../../Shared/Animation/ReloadAnimation';
 
 const RequireAuth = ({ children }) => {
+ 
  const [user, loading] = useAuthState(auth);
  const location = useLocation();
  if (loading) {

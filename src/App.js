@@ -12,6 +12,7 @@ import PageNotFound from './Components/Home/Page/404/PageNotFound';
 import CourseFutures from './Components/Home/CourseOverview/CourseFutures';
 import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
 import Courses from './Components/CoursesCoponent/Courses';
+import DisplayCourse from './Components/Home/HomeServices/DisplayCourse';
 
 const App = () => {
   return (
@@ -26,7 +27,16 @@ const App = () => {
           </RequireAuth>
         }>
         </Route>
-        <Route path='/courses/:aboutCourse' element={<CourseFutures></CourseFutures>}></Route>
+        <Route path='/courses/:aboutCourse' element={
+          <CourseFutures></CourseFutures>}></Route>
+
+        <Route path='/addCart' element={
+          <RequireAuth>
+            <CourseFutures></CourseFutures>
+          </RequireAuth>
+        }>
+        </Route>
+
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>

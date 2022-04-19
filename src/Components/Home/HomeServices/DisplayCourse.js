@@ -1,25 +1,41 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faUser, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import React, { createContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import './DisplayCourse.css'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import ReloadAnimation from '../../Shared/Animation/ReloadAnimation';
 
-const DisplayCourse = ({ hadelCourseFutures, course }) => {
+const DisplayCourse = ({ hadelCourseFutures, course, children }) => {
  const { courseName, author, authorImg, img, dis, price, students, lesson, rateing } = course;
- const [user] = useAuthState(auth)
+ const [user, loading] = useAuthState(auth)
 
  const navigate = useNavigate();
- const hadelAddToCart = () => {
-  if (!user) {
-   navigate(`/login`)
-  }
-  else {
-   navigate('/courses/aboutCourse')
-  }
-
+ if (loading) {
+  <ReloadAnimation></ReloadAnimation>
  }
+ const hadelHomeAddToCart = () => {
+  if (!user) {
+   navigate('/login')
+
+  }
+   else{
+    navigate('/addCart')
+   }
+ }
+ /*  const location = useLocation();
+  // const navigate = useNavigate();
+  if (loading) {
+   <ReloadAnimation></ReloadAnimation>
+  }
+  const hadelHomeAddToCart = () => {
+   if (!user) {
+    return <Navigate to='/login' state={{ from: location }} replace></Navigate>
+   }
+   return children;
+ 
+  } */
 
  return (
   <>
@@ -54,8 +70,8 @@ const DisplayCourse = ({ hadelCourseFutures, course }) => {
       <h2 className="course-price"></h2>
       <div className="course-btn flex items-center justify-between">
        <button className='course-cart-btn p-2 text-white rounded 
-       font-bold' onClick={hadelAddToCart}>${price} USD</button>
-       <div className="readMore">
+       font-bold' onClick={hadelHomeAddToCart}>${price} USD</button>
+       <div className="readMore">=
         <button className=' font-bold p-2 border-blue-600 border-b-4 rounded 
         hover:text-blue-500' onClick={() => hadelCourseFutures()}>Read More</button>
         {/* <button onClick={() => props.hadelCourseFutures(props.course)}>Read More</button> */}

@@ -4,18 +4,24 @@ import { faStar, faUser, faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import ReloadAnimation from '../Shared/Animation/ReloadAnimation';
 
 const ShowCouses = ({ hadelCourseFutures, course }) => {
  const { courseName, author, authorImg, img, dis, price, students, lesson, rateing } = course;
- const [user] = useAuthState(auth)
+ const [user, loading] = useAuthState(auth)
 
  const navigate = useNavigate();
  const hadelAddToCart = () => {
+  // if(loading){
+  //  <ReloadAnimation></ReloadAnimation>
+  // }
   if (!user) {
    navigate(`/login`)
+
   }
   else {
    navigate('/courses/aboutCourse')
+
   }
 
  }
